@@ -12,6 +12,8 @@ public class LooseCouplingExample {
         UserInfo userInfo1=new UserInfo(webUserData);
 
         System.out.println(userInfo1.getUserInfo());
+        System.out.println("================================================");
+
 
 
     }
