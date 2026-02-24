@@ -6,7 +6,7 @@
 
     <bean id="specification" class="car.example.setter.injection.Specification">
         <property name="name" value="Soumya"/>
-        <property name="model" value="Suzuki"/>
+        <property name="models" value="Suzuki"/>
     </bean>
 
     <bean id="car" class="car.example.setter.injection.Car">

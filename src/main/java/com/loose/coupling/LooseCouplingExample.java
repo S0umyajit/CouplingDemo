@@ -8,7 +8,6 @@ public class LooseCouplingExample {
 
         System.out.println(userInfo.getUserInfo());
         UserDataProider webUserData=new WebDataProvider();
-
         UserInfo userInfo1=new UserInfo(webUserData);
 
         System.out.println(userInfo1.getUserInfo());

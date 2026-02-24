@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="specification" class="com.example.autowire.name.Specification">
+        <property name="name" value="Maruti"/>
+        <property name="models" value="Suzuki"/>
+    </bean>
+    <bean id="specifications" class="com.example.autowire.name.Specification">
+        <property name="name" value="Honda"/>
+        <property name="models" value="Suzuki"/>
+    </bean>
+
+    <bean id="car" class="com.example.autowire.name.Car" autowire="byName">
+    </bean>
+
+</beans>

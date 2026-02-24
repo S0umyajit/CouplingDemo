@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDatabase" class="couplingDemoSpringIoc.UserDatabase">
+
+    </bean>
+
+    <bean id="webDataProvider" class="couplingDemoSpringIoc.WebDataProvider">
+
+    </bean>
+
+    <bean id="userInfowithuserDatabase" class="couplingDemoSpringIoc.UserInfo">
+        <constructor-arg ref="userDatabase"/>
+    </bean>
+    <bean id="userInfowithwebDataProvider" class="couplingDemoSpringIoc.UserInfo">
+        <constructor-arg ref="webDataProvider"/>
+    </bean>
+
+</beans>
